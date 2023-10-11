@@ -11,9 +11,12 @@ public class Client {
 
             System.out.println("Connessione effettuata");
             String response;
+            response = in.readLine();
+            System.out.println(response);
 
             while (true) {
                 response = in.readLine();
+
                 if (response.equals("4")) {
                     System.out.println("Connessione chiusa.");
                     break;
